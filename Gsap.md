@@ -1,4 +1,4 @@
 ### Gsap
 
-gsap: greensock에서 지원하는 Gsap 애니메이션 라이브러리
+The GreenSock Animation Platform (**GSAP**) is a popular set of JavaScript tools for building animations on the web.
 
