@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gsap scroll</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.scss"> -->
+    
+</head>
+<body>
+    <section>
+        <h1>scroll down</h1>
+    </section>
+
+    <section>
+        <div class="box"></div>
+    </section>
+    <section class="dark">
+        <div class="content">
+            <h2>Are you really sick</h2>
+            <p>Go test it Covid 19</p>
+        </div>
+        <img src="covid.jpeg">
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to(".box", {
+            scrollTrigger: {
+                trigger: '.box',
+                start: 'bottom center'
+
+            },
+            x: 500
+        })
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                start: 'center bottom',
+                trigger: '.dark',
+            }
+        });
+
+        tl.from("img", { x: 200, opacity: 0, duration: 1.5})
+        .from(".content", { y: 300, opacity: 0, duration: 1}, "-=1");
+    </script>
+</body>
+</html>
