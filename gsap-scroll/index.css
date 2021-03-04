@@ -20,8 +20,15 @@ section {
     position: relative;
 }
 
+.for-space {
+    height: 50px;
+    background-color: rgb(17, 17, 17);
+    display: inline;
+}
+
 img {
     width: 50%;
+    height: 50%;
     height: 100vh;
     position: absolute;
     right: 0;
