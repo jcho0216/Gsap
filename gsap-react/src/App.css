@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+  visibility: hidden;
+  
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: #fdcf51;
+  margin: 50px auto;
+  position: relative;
+  top: 200px;
+}
+
+.circle.red {
+  background-color: #fd5151;
+}
+
+.circle.blue {
+  background-color: #51f0fd;
+}
