@@ -7,11 +7,6 @@ import imageBoy from './images/boy.webp';
 import arrow from './images/arrow.svg';
 
 
-import Ball from './Ball';
-
-
-
-
 function App() {
     let tl = new TimelineLite({delay: .8});
     //img vars
@@ -57,7 +52,6 @@ function App() {
 
   return (
     <div className="hero" ref={el => app = el}>
-      <Ball />
       <div className="container">
         <div className="hero-inner">
           <div className="hero-content">
