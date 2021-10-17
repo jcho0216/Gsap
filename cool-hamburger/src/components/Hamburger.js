@@ -154,6 +154,7 @@ const Hamburger = ({state}) => {
       ease: 'power3.inOut'
     })
   }
+  
 
   return (
     <div ref={el => menu = el} className='hamburger-menu'>  
